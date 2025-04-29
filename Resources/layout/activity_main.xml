@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linearLayout1">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:background="@android:color/background_dark">
+        <TextView
+            android:text="Enter 1st no."
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1"
+            android:background="@android:color/background_dark"
+            android:textColor="#fff7f3f3"
+            android:layout_marginLeft="4.5dp"/>
+        <EditText
+            android:inputType="numberDecimal"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView1"
+            android:id="@+id/editText1"
+            android:textColor="@android:color/background_light"
+            android:text="5"
+            android:layout_marginTop="33.0dp"
+            android:layout_marginLeft="9.0dp" />
+        <TextView
+            android:text="Enter 2nd no."
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/textView1"
+            android:id="@+id/textView2"
+            android:textColor="@android:color/background_light"
+            android:layout_marginLeft="107.5dp" />
+        <EditText
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView2"
+            android:id="@+id/editText2"
+            android:text="5"
+            android:textColor="@android:color/background_light"
+            android:layout_marginLeft="235.5dp"
+			android:layout_marginTop="33.0dp"/>
+        <Button
+            android:text="+"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText1"
+            android:id="@+id/button1" />
+        <Button
+            android:text="*"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText2"
+            android:id="@+id/button2"
+            android:layout_marginLeft="293.5dp" />
+        <Button
+            android:text="-"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button1"
+            android:id="@+id/button3"
+            android:layout_marginTop="0.0dp" />
+        <Button
+            android:text="÷"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button2"
+            android:id="@+id/button4"
+            android:layout_marginLeft="293.0dp"
+            android:layout_marginTop="0.0dp" />
+        <TextView
+            android:text="Result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="30dp"
+            android:layout_marginTop="225.5dp" />
+    </RelativeLayout>
+</LinearLayout>
